@@ -132,12 +132,14 @@ void ScacchieraMa(int _dim, int _m[_dim][_dim]){
 }
 
 bool allDifferentM(int _rows; int _cols; int _m[_rows][_cols]){
-    int scorr= _m
-    for(scorr)
+    int n_elem = (_rows*_cols);
+
+    for(int p=0; p < n_elem; p++){
         for(int i=0; i<_rows; i++){
             for(int j=0; j<_cols; j++){
-                if()
+                if(_m[i][j] ==)
             }
         }
+    }
 }
 
