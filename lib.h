@@ -36,3 +36,11 @@ void printColArray(int _v[], int _dim);
  */
 
 void caricavettore(int _v[], int _dim, int _min, int _max);
+
+/**
+ * ricopia la stringa sorgente nella destinazione
+ * @param char stringa di caratteri sorgente
+ * @param char stringa di caratteri che copia la sorgente 
+ */
+
+ void strcpy2(char dst[], char src[]);

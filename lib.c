@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdbool.h>
 #include "lib.h"
 
 void manualInputArray(int _v[], int _dim){
@@ -131,15 +132,62 @@ void ScacchieraMa(int _dim, int _m[_dim][_dim]){
     }
 }
 
-bool allDifferentM(int _rows; int _cols; int _m[_rows][_cols]){
-    int n_elem = (_rows*_cols);
 
-    for(int p=0; p < n_elem; p++){
-        for(int i=0; i<_rows; i++){
-            for(int j=0; j<_cols; j++){
-                if(_m[i][j] ==)
+float MediaM(int r, int c, int m[r][c]){
+    int sum=0;
+    float media = 0;
+    for(int i=0; i<r; i++){
+        for(int j=0; j<c; j++){
+            sum = sum + m[i][j];
+        }
+    }
+    media = (float)sum / (r*c);
+    return media;
+}
+
+void triangoloM(int DIM, int m[DIM][DIM]){
+    for(int i = 0; i<DIM; i++){
+        for(int j = 0; j<DIM; j++){
+            if(i<j){
+                m[i][j]= 1;
+                printf("%d", m[i][j]);
+            }else{
+                if(i==j){
+                    m[i][j] = 5;
+                    printf("%d", m[i][j]);
+                }else{
+                    m[i][j] = 0;
+                    printf("%d", m[i][j]);
+                }
             }
         }
+        printf("\n");
+    }
+}
+
+bool jesus(int r, int c, int m[r][c], int vett[c]){
+    int cnt;
+    for(int i=0; i<r; i++){
+        int cnt=0;
+        for(int j=0; j<c; j++){
+            if(m[i][j]== vett[c]){
+                cnt++;
+            }
+        }
+        if(cnt == c){
+            return(true);
+        }
+    }
+    return(false);
+}
+
+void DuplicaS(char str[], char Dstr[]){
+    int ST= '\0';
+    int i;
+    for(i=0; i != ST; i++){
+        str[i] = Dstr[i];
+        printf("%s " ,str);
+        printf("%s2" ,Dstr);
     }
 }
 
