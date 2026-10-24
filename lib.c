@@ -191,3 +191,14 @@ void DuplicaS(char str[], char Dstr[]){
     }
 }
 
+void strcat2(char* dst, char* s){
+    int ST = '\0';
+    int i=0;
+    for(i=0; dst[i] != ST; i++){
+        if(dst[i] == dst[ST-1]){
+            for(i=0; s[i] != ST; i++){
+                dst[i+1] = s[i];
+            }
+        }
+    }
+}
