@@ -191,6 +191,8 @@ void DuplicaS(char str[], char Dstr[]){
     }
 }
 
+
+//non funziona 
 void strcat2(char* dst, char* s){
     int ST = '\0';
     int i=0;
@@ -202,3 +204,4 @@ void strcat2(char* dst, char* s){
         }
     }
 }
+

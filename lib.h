@@ -44,3 +44,11 @@ void caricavettore(int _v[], int _dim, int _min, int _max);
  */
 
  void strcpy2(char dst[], char src[]);
+
+/**
+ *aggancia due stringhe
+ *@param char* stringa a cui si dovrà attaccare l'laltra
+ *@param char* stringa da incollare a quella precedente
+*/
+
+ void strcat2(char* dst, char* s);
