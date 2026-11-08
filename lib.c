@@ -205,3 +205,22 @@ void strcat2(char* dst, char* s){
     }
 }
 
+bool repeatedChars(char s[]){
+    for(int i = 1; s[i]!='\0'; i++){
+        for(int j = i+1; s[j]!='\0'; j++){
+            if(s[i] == s[j]){
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+bool substrAtpos(char s[], int pos, char subString[]){
+    for(int i=0; subString[i]!='\0'; i++){
+        if(s(pos+i) == '\0' || s(pos+i) != subString[i])
+            return false;
+    }
+    return true;
+}
+
